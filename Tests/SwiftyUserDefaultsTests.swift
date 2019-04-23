@@ -132,7 +132,7 @@ class SwiftyUserDefaultsTests: XCTestCase {
     
     // --
     
-    @available(*, deprecated:1)
+    @available(*, deprecated)
     func testOperatorsInt() {
         // +=
         let key2 = "int2"
@@ -159,7 +159,7 @@ class SwiftyUserDefaultsTests: XCTestCase {
         XCTAssertEqual(Defaults[key5].int!, 1)
     }
     
-    @available(*, deprecated:1)
+    @available(*, deprecated)
     func testOperatorsDouble() {
         let key = "double"
         Defaults[key] = 3.14
@@ -176,7 +176,7 @@ class SwiftyUserDefaultsTests: XCTestCase {
         XCTAssertEqual(Defaults[key3].double!, 5.3)
     }
     
-    @available(*, deprecated:1)
+    @available(*, deprecated)
     func testHuhEquals() {
         // set and read
         let key = "string"
